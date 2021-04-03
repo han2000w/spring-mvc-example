@@ -1,5 +1,7 @@
 pipeline {
     agent any
+    tools {
+        maven 'maven'        
     options { skipDefaultCheckout(true) }
     stages {
         stage('Build and Test') {
