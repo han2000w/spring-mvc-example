@@ -4,7 +4,6 @@ pipeline {
         maven 'maven'
         jdk 'java1.8'
     }
-    options { skipDefaultCheckout(true) }
     stages {
         stage('Build and Test') {
             steps {
