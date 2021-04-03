@@ -1,5 +1,5 @@
 pipeline {
-    agent none
+    agent any
     options { skipDefaultCheckout(true) }
     stages {
         stage('Build and Test') {
