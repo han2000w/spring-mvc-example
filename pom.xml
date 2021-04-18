@@ -14,12 +14,21 @@
 
   <repositories>
 	<repository>
-		<id>public</id>
+		<id>central</id>
 		<url>http://192.168.75.240:8081/repository/maven-public/</url>
 		<releases><enabled>true</enabled></releases>
 		<snapshots><enabled>true</enabled></snapshots>
 	</repository>
   </repositories>
+  
+  <pluginRepositories>
+    <pluginRepository>
+        <id>central</id>
+        <url>http://192.168.75.240:8081/repository/maven-public/</url>
+        <releases><enabled>true</enabled></releases>
+        <snapshots><enabled>true</enabled></snapshots>
+    </pluginRepository>
+  </pluginRepositories> 
   
   <dependencies>
     <dependency>
