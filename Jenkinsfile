@@ -24,10 +24,10 @@ pipeline {
                 echo "hahaha"
             }
         }
-        stage('Docker build') {
-            steps {
-                sh 'docker build -t $registry/mvc:latest .'
-            }
-        }
+        //stage('Docker build') {
+            //steps {
+                //sh 'docker build -t $registry/mvc:latest .'
+            //}
+        //}
     }
 }
