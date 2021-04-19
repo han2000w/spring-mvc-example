@@ -12,7 +12,7 @@
     <org.springframework-version>4.2.6.RELEASE</org.springframework-version>
   </properties>
 
-/*	
+<!--
   <repositories>
 	<repository>
 		<id>central</id>
@@ -30,7 +30,7 @@
         <snapshots><enabled>true</enabled></snapshots>
     </pluginRepository>
   </pluginRepositories>
-	*/
+-->
   
   <dependencies>
     <dependency>
