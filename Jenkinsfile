@@ -32,7 +32,8 @@ pipeline {
                 
             steps {
                 withSonarQubeEnv('sonarqube') {
-                    sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=my:app -Dsonar.projectName='my app' -Dsonar.projectVersion=1.0 -D sonar.sources=. -Dsonar.java.binaries=target/classes"
+                    sh "${scannerHome}/bin/sonar-scanner"
+                    //sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=my:app -Dsonar.projectName='my app' -Dsonar.projectVersion=1.0 -D sonar.sources=. -Dsonar.java.binaries=target/classes"
             }
             }
         }
