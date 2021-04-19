@@ -12,6 +12,7 @@
     <org.springframework-version>4.2.6.RELEASE</org.springframework-version>
   </properties>
 
+/*	
   <repositories>
 	<repository>
 		<id>central</id>
@@ -28,7 +29,8 @@
         <releases><enabled>true</enabled></releases>
         <snapshots><enabled>true</enabled></snapshots>
     </pluginRepository>
-  </pluginRepositories> 
+  </pluginRepositories>
+	*/
   
   <dependencies>
     <dependency>
