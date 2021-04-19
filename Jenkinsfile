@@ -5,7 +5,7 @@ pipeline {
     agent any
     tools {
         maven 'maven'
-        jdk 'java1.8'
+        jdk 'java'
     }
     stages {
         stage('Build and Test') {
