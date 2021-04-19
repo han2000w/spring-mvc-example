@@ -21,9 +21,24 @@ pipeline {
         }
         stage('han2000w') {
             steps {
-                echo "hahaha"
+                echo "hi"
             }
         }
+        
+        stage('Sonarqube') {
+            environment {
+                scannerHome = tool 'sonaqube_scanner'
+            }
+                
+            steps {
+                withSonarQubeEnv('sonarqube') {
+                    sh "${scannerHome}/bin/sonar-scanner"
+            }
+            }
+        }
+        
+        
+        
         //stage('Docker build') {
             //steps {
                 //sh 'docker build -t $registry/mvc:latest .'
