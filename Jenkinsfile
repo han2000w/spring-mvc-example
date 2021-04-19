@@ -32,7 +32,7 @@ pipeline {
                 
             steps {
                 withSonarQubeEnv('sonarqube') {
-                    sh "${scannerHome}/bin/sonar-scanner"
+                    sh "${scannerHome}/bin/sonar-scanner -D sonar.projectKey=my:app -D sonar.projectName=my app -D sonar.projectVersion=1.0 -D sonar.sources=."
             }
             }
         }
